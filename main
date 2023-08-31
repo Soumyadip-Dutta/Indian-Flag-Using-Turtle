@@ -1,0 +1,77 @@
+import turtle
+from turtle import Turtle, Screen,colormode
+import turtle as tur
+from random import  randint
+colormode(255)
+tim = Turtle()
+tim.pensize(10)
+
+tim.color("black","brown")
+tim.left(90)
+tim.forward(250)
+tim.pensize(2)
+
+#1st
+tim.color("black","orange")
+tim.begin_fill()
+tim.right(90)
+tim.forward(200)
+tim.right(90)
+tim.forward(50)
+tim.right(90)
+tim.forward(200)
+tim.end_fill()
+
+#2nd
+tim.color("black","white")
+tim.begin_fill()
+tim.left(180)
+tim.forward(200)
+tim.right(90)
+tim.forward(50)
+tim.right(90)
+tim.forward(200)
+tim.end_fill()
+
+#3rd
+tim.color("black","green")
+tim.begin_fill()
+tim.left(180)
+tim.forward(200)
+tim.right(90)
+tim.forward(50)
+tim.right(90)
+tim.forward(200)
+tim.end_fill()
+
+
+#4th
+tim.penup()
+tim.goto(100,200)
+tim.pendown()
+tim.circle(25)
+tim.penup()
+tim.goto(100,175)
+
+y = 0
+for _ in range(int(360/15)):
+    deg = y + 15
+    tim.penup()
+    tim.pendown()
+    tim.goto(100,175)
+    tim.left(deg)
+    tim.forward(25)
+
+# tim.hideturtle()
+tim.penup()
+tim.color("Brown")
+tim.pensize(20)
+tim.begin_fill()
+tim.goto(-100,0)
+tim.right(180)
+
+tim.pendown()
+tim.forward(200)
+
+screen = Screen()
+screen.exitonclick()
