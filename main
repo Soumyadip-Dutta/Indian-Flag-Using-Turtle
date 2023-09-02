@@ -1,18 +1,54 @@
-import turtle
 from turtle import Turtle, Screen,colormode
-import turtle as tur
-from random import  randint
 colormode(255)
 tim = Turtle()
-tim.pensize(10)
 
-tim.color("black","brown")
+
+screen = Screen()
+screen.setup(width=600, height=600)
+screen.title("Indian Flag")
+screen.textinput(title="Bharat Mata ki Jay", prompt=" ")
+
+#BackGround
+tim.color("lightblue")
+tim.goto(-300,300)
+tim.begin_fill()
+tim.forward(600)
+tim.right(90)
+tim.forward(300)
+tim.right(90)
+tim.forward(600)
+tim.end_fill()
+
+tim.color("#ADFF2F")
+tim.goto(-300,-300)
+tim.begin_fill()
+tim.right(180)
+tim.forward(600)
+tim.left(90)
+tim.forward(300)
+tim.left(90)
+tim.forward(600)
+tim.end_fill()
+
+
+
+
+#Start
+
+tim.goto(0,0)
+tim.setheading(0)
+tim.pensize(10)
+#flag start
+tim.color("black")
 tim.left(90)
 tim.forward(250)
 tim.pensize(2)
 
-#1st
-tim.color("black","orange")
+
+
+
+#1st Saffron
+tim.color("#FF9933")
 tim.begin_fill()
 tim.right(90)
 tim.forward(200)
@@ -22,19 +58,8 @@ tim.right(90)
 tim.forward(200)
 tim.end_fill()
 
-#2nd
-tim.color("black","white")
-tim.begin_fill()
-tim.left(180)
-tim.forward(200)
-tim.right(90)
-tim.forward(50)
-tim.right(90)
-tim.forward(200)
-tim.end_fill()
-
-#3rd
-tim.color("black","green")
+#2nd White
+tim.color("white")
 tim.begin_fill()
 tim.left(180)
 tim.forward(200)
@@ -44,8 +69,20 @@ tim.right(90)
 tim.forward(200)
 tim.end_fill()
 
+#3rd Green
+tim.color("green")
+tim.begin_fill()
+tim.left(180)
+tim.forward(200)
+tim.right(90)
+tim.forward(50)
+tim.right(90)
+tim.forward(200)
+tim.end_fill()
 
-#4th
+
+#4th Chakra
+tim.color("#000080")
 tim.penup()
 tim.goto(100,200)
 tim.pendown()
@@ -62,16 +99,28 @@ for _ in range(int(360/15)):
     tim.left(deg)
     tim.forward(25)
 
-# tim.hideturtle()
 tim.penup()
+tim.goto(0,0)
 tim.color("Brown")
-tim.pensize(20)
+tim.goto(-30,0)
 tim.begin_fill()
-tim.goto(-100,0)
 tim.right(180)
+tim.forward(60)
+tim.right(90)
+tim.forward(20)
+tim.right(90)
+tim.forward(60)
+tim.end_fill()
+#
+tim.goto(-60,-40)
+tim.begin_fill()
+tim.right(90)
+tim.forward(20)
+tim.right(90)
+tim.forward(120)
+tim.right(90)
+tim.forward(20)
+tim.end_fill()
+tim.hideturtle()
 
-tim.pendown()
-tim.forward(200)
-
-screen = Screen()
 screen.exitonclick()
