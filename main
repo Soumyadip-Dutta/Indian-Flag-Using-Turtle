@@ -1,12 +1,11 @@
-from turtle import Turtle, Screen,colormode
-colormode(255)
+from turtle import Turtle, Screen
 tim = Turtle()
 
 
 screen = Screen()
 screen.setup(width=600, height=600)
 screen.title("Indian Flag")
-screen.textinput(title="Bharat Mata ki Jay", prompt=" ")
+
 
 #BackGround
 tim.color("lightblue")
