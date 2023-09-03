@@ -1,13 +1,12 @@
 from turtle import Turtle, Screen
+
 tim = Turtle()
-
-
 screen = Screen()
 screen.setup(width=600, height=600)
 screen.title("Indian Flag")
+screen.textinput(title="Bharat Mata ki Jay", prompt=" ")
 
-
-#BackGround
+# Creating Background
 tim.color("lightblue")
 tim.goto(-300,300)
 tim.begin_fill()
@@ -32,12 +31,34 @@ tim.end_fill()
 
 
 
-#Start
+# Start
+# Drawing the flag's pole
+
+tim.goto(0,0)
+tim.color("Brown")
+tim.goto(-30,0)
+tim.begin_fill()
+tim.right(180)
+tim.forward(60)
+tim.right(90)
+tim.forward(20)
+tim.right(90)
+tim.forward(60)
+tim.end_fill()
+tim.goto(-60,-40)
+tim.begin_fill()
+tim.right(90)
+tim.forward(20)
+tim.right(90)
+tim.forward(120)
+tim.right(90)
+tim.forward(20)
+tim.end_fill()
 
 tim.goto(0,0)
 tim.setheading(0)
 tim.pensize(10)
-#flag start
+
 tim.color("black")
 tim.left(90)
 tim.forward(250)
@@ -46,7 +67,7 @@ tim.pensize(2)
 
 
 
-#1st Saffron
+# Drawing the flag's Saffron
 tim.color("#FF9933")
 tim.begin_fill()
 tim.right(90)
@@ -57,7 +78,7 @@ tim.right(90)
 tim.forward(200)
 tim.end_fill()
 
-#2nd White
+#Drawing the flag's White
 tim.color("white")
 tim.begin_fill()
 tim.left(180)
@@ -68,7 +89,7 @@ tim.right(90)
 tim.forward(200)
 tim.end_fill()
 
-#3rd Green
+#Drawing the flag's Green
 tim.color("green")
 tim.begin_fill()
 tim.left(180)
@@ -80,7 +101,7 @@ tim.forward(200)
 tim.end_fill()
 
 
-#4th Chakra
+#Drawing the flag's Ashok Chakra
 tim.color("#000080")
 tim.penup()
 tim.goto(100,200)
@@ -98,28 +119,9 @@ for _ in range(int(360/15)):
     tim.left(deg)
     tim.forward(25)
 
-tim.penup()
-tim.goto(0,0)
-tim.color("Brown")
-tim.goto(-30,0)
-tim.begin_fill()
-tim.right(180)
-tim.forward(60)
-tim.right(90)
-tim.forward(20)
-tim.right(90)
-tim.forward(60)
-tim.end_fill()
-#
-tim.goto(-60,-40)
-tim.begin_fill()
-tim.right(90)
-tim.forward(20)
-tim.right(90)
-tim.forward(120)
-tim.right(90)
-tim.forward(20)
-tim.end_fill()
+
+
 tim.hideturtle()
+
 
 screen.exitonclick()
